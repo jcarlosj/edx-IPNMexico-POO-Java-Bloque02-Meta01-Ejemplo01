@@ -15,9 +15,20 @@ public class Principal {
 		
 		//-> Operamos el elevador pequeño
 		//   para ello debemos acceder a sus funcionalidades programadas.
-		System .out .println( "\n\nElevador pequeño" );
-		elevadorPequenio .cerrarPuerta();
-		System .out .println( " - Ha bajado al piso: " + elevadorPequenio .bajarPiso( 7 ));
+		//System .out .println( "\n\nElevador pequeño" );
+		//elevadorPequenio .cerrarPuerta();
+		//System .out .println( " - Ha bajado al piso: " + elevadorPequenio .bajarPiso( 7 ));
+		
+		//-> Paso de referencia.
+		Elevador otroElevador = elevadorPequenio;	//: Asignamos un objeto "Elevador" a uno nuevo no instanciado.
+		System .out .println( "\n\nReferencias de memoria de los 2 objetos" );
+		System .out .println( " - otroElevador    : " + elevadorPequenio + "\n - elevadorPequenio: " + otroElevador );
+		
+		//-> Cambiamos el valor de la referencia y vemos los cambios en el objeto original y el que se asignó por referencia
+		otroElevador .capacidadMaximaPersonas = 3;
+		System .out .println();
+		System .out .println( " > Capacidad máxima (otroElevador)    : " + otroElevador .capacidadMaximaPersonas + " personas" );
+		System .out .println( " > Capacidad máxima (elevadorPequenio): " + elevadorPequenio .capacidadMaximaPersonas + " personas" );
 	}
 
 }
