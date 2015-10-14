@@ -7,10 +7,11 @@ public class Elevador {
 	public int capacidadMaximaPersonas;
 	
 	//-> Constructor
-	public Elevador() {
+	//   Pasamos los parámetros que recibirá el constructor (peso, capacidad)
+	public Elevador( int peso, int capacidad ) {	
 		//-> Inicializamos los atributos a través del constructor.
-		pesoMaximo = 400;
-		capacidadMaximaPersonas = 5;
+		pesoMaximo = peso;						//: Asignamos el valor entrante al atributo "pesoMaximo" de la clase
+		capacidadMaximaPersonas = capacidad;	//: Asignamos el valor entrante al atributo "capacidadMaximaPersonas" de la clase
 	}
 	
 	//-> Métodos
