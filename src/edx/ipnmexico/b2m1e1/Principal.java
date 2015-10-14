@@ -12,6 +12,12 @@ public class Principal {
 		//   para un elevador de más capacidad
 		Elevador elevadorMasGrande = new Elevador( 800, 10 );	//: Instanciamos y pasamos parámetros para el elevador grande.
 		System .out .print( "Elevador grande \n - Peso Máximo: " + elevadorMasGrande .pesoMaximo + "\n - Capacidad " + elevadorMasGrande .capacidadMaximaPersonas );
+		
+		//-> Operamos el elevador pequeño
+		//   para ello debemos acceder a sus funcionalidades programadas.
+		System .out .println( "\n\nElevador pequeño" );
+		elevadorPequenio .cerrarPuerta();
+		System .out .println( " - Ha bajado al piso: " + elevadorPequenio .bajarPiso( 7 ));
 	}
 
 }

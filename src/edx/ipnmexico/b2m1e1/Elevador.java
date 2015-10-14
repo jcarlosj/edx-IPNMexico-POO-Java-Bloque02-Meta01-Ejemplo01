@@ -24,11 +24,11 @@ public class Elevador {
 	}
 	
 	public void abrirPuerta() {
-		System .out .println( "Abriendo puertas." );
+		System .out .println( " - Abriendo puertas." );
 	}
 	
 	public void cerrarPuerta() {
-		System .out .println( "Cerrando puertas." );
+		System .out .println( " - Cerrando puertas." );
 	}
 	
 }
