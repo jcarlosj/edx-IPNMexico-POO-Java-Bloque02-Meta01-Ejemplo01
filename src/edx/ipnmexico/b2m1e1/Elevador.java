@@ -3,8 +3,8 @@ package edx.ipnmexico.b2m1e1;
 public class Elevador {
 
 	//-> Atributos
-	public int pesoMaximo;
-	public int capacidadMaximaPersonas;
+	private int pesoMaximo;
+	private int capacidadMaximaPersonas;
 	
 	//-> Constructor
 	//   Pasamos los parámetros que recibirá el constructor (peso, capacidad)
@@ -29,6 +29,23 @@ public class Elevador {
 	
 	public void cerrarPuerta() {
 		System .out .println( " - Cerrando puertas." );
+	}
+	
+	//-> Getters y Setters
+	public int getPesoMaximo() {
+		return pesoMaximo;
+	}
+
+	public void setPesoMaximo( int pesoMaximo ) {
+		this .pesoMaximo = pesoMaximo;
+	}
+
+	public int getCapacidadMaximaPersonas() {
+		return capacidadMaximaPersonas;
+	}
+
+	public void setCapacidadMaximaPersonas( int capacidadMaximaPersonas ) {
+		this .capacidadMaximaPersonas = capacidadMaximaPersonas;
 	}
 	
 }
