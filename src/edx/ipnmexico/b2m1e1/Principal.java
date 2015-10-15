@@ -4,11 +4,18 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		ElevadorAutos elevadorAutos = new ElevadorAutos( 400, 5 );		//: Instanciamos y pasamos parámetros para el elevador autos.
-
-		System .out .print( "Elevador Autos\n - Hemos subido al piso: " + elevadorAutos .subirPiso( 5 ) + "\n" );
-		elevadorAutos .abrirPuerta();
-		elevadorAutos .cerrarPuerta();
-		System .out .print( " - Hemos bajado al piso: " + elevadorAutos .bajarPiso( 6 ) + "\n" );
+		//-> Clase padre
+		Animal animal = new Animal();
+		animal .desplazarse();	//: Método original en la clase padre.
+		
+		//-> Sub-Clases, Clases hijas o Clases que heredan de la clase padre
+		Ave ave = new Ave();
+		ave .desplazarse();		//: Accede al método sobre escrito en la clase "Ave"
+		
+		Pez pez = new Pez();
+		pez .desplazarse();		//: Accede al método sobre escrito en la clase "Pez"
+		
+		MamiferoTerrestre mt = new MamiferoTerrestre();
+		mt .desplazarse();		//: Accede al método sobre escrito en la clase "MamiferoTerrestre"
 	}	
 }
