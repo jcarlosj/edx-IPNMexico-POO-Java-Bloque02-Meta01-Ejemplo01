@@ -13,6 +13,11 @@ public class Principal {
 		DesplazarAnimal( ave ); 		//: El objeto "ave" es de tipo "Ave" y de tipo "Animal"
 		DesplazarAnimal( pez ); 		//: El objeto "pez" es de tipo "Pez" y de tipo "Animal"
 		DesplazarAnimal( mt ); 			//: El objeto "mt" es de tipo "MamiferoTerrestre" y de tipo "Animal"
+
+		//-> Haciendo uso de la implementación de la interfaz carnívoro
+		mt .masticar();
+		mt .cazar( "garras" );
+		
 	}	
 	
 	//-> Muestra cada tipo de desplazamiento ya que aunque cada objeto que se le pasa
