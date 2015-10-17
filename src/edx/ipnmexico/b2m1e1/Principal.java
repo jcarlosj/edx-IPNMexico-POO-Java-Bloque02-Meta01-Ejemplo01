@@ -4,16 +4,12 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		//-> Clase padre
-		Animal animal = new Animal();
-		
 		//-> Sub-Clases, Clases hijas o Clases que heredan de la clase padre
 		Ave ave = new Ave();								
 		Pez pez = new Pez();
 		MamiferoTerrestre mt = new MamiferoTerrestre();
 		
 		//-> Realizamos el desplazamiento pasando cada uno de los objetos
-		DesplazarAnimal( animal ); 		//: El objeto "animal" es de tipo "Animal"
 		DesplazarAnimal( ave ); 		//: El objeto "ave" es de tipo "Ave" y de tipo "Animal"
 		DesplazarAnimal( pez ); 		//: El objeto "pez" es de tipo "Pez" y de tipo "Animal"
 		DesplazarAnimal( mt ); 			//: El objeto "mt" es de tipo "MamiferoTerrestre" y de tipo "Animal"

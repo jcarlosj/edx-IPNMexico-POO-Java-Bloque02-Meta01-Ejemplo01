@@ -1,6 +1,6 @@
 package edx.ipnmexico.b2m1e1;
 
-public class Animal {
+public abstract class Animal {
 
 	//-> Atributos (Comunes)
 	private int peso,
@@ -32,9 +32,9 @@ public class Animal {
 		this .nombre = nombre;
 	}
 	
-	//-> Métodos
-	public void desplazarse() {
-		System .out .println( "Soy un Animal y me desplazo" );
-	}
+	//-> Método Abstracto
+	//   Que puede ser usado como tal en cualquiera 
+	//   de los Hijos que hereden de esta clase
+	public abstract void desplazarse();
 	
 }
