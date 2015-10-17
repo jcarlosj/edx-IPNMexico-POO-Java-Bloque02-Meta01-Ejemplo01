@@ -12,6 +12,7 @@ public class Tarea implements Runnable {
 	public Tarea( String nombreTarea ) {
 		super();
 		this .nombreTarea = nombreTarea;
+		this .dato = 0;
 	}
 
 
@@ -25,19 +26,18 @@ public class Tarea implements Runnable {
 	}
 	
 	private void cuenta() {
-		int i = 0;
 		do {
-			System .out .println( "Soy la " + this .nombreTarea + " sumo " + i );
-			i++;
-		} while( i <= 30 );
+			System .out .println( "Soy la " + this .nombreTarea + " sumo " + this .dato );
+			this .dato++;
+		} while( this .dato <= 30 );
 	}
 
 	private void cuentaRegresiva() {
-		int i = 30;
+		this .dato--;
 		do {
-			System .out .println( "Soy la " + this .nombreTarea + " resto " + i );
-			i--;
-		} while( i >= 0 );
+			System .out .println( "Soy la " + this .nombreTarea + " resto " + this .dato );
+			this .dato--;
+		} while( this .dato >= 0 );
 	}
 	
 }
