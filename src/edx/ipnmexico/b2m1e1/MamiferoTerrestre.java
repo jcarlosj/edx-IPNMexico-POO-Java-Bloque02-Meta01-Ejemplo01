@@ -3,7 +3,7 @@ package edx.ipnmexico.b2m1e1;
 //-> "implements" es la forma como una clase hereda de una 
 //   interfaz una o varias interfaces, es la equivalencia 
 //   a la herencia múltiple, aunque Java no la soporta.
-public class MamiferoTerrestre extends Animal implements Canivoro {
+public class MamiferoTerrestre extends Animal implements Canivoro, Vertebrado {
 
 	//-> Método de la clase padré Animal
 	@Override					
